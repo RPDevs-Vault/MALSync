@@ -74,7 +74,7 @@ Makes it possible to use your MyAnimeList/Anilist/Kitsu/Simkl anime/mangalist as
                 <td><a href="https://reader.deathtollscans.net"><img src="https://favicon.malsync.moe/?domain=https://reader.deathtollscans.net"> DeathTollScans</a></td>
                 <td></td>
               </tr><tr>
-                <td><a href="https://animekai.bz"><img src="https://favicon.malsync.moe/?domain=https://animekai.bz"> AnimeKAI</a></td>
+                <td><a href="https://animekai.to"><img src="https://favicon.malsync.moe/?domain=https://animekai.to"> AnimeKAI</a></td>
                 <td><a href="https://disasterscans.com"><img src="https://favicon.malsync.moe/?domain=https://disasterscans.com"> DisasterScans</a></td>
                 <td></td>
               </tr><tr>
