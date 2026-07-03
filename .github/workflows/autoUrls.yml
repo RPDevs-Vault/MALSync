@@ -94,6 +94,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
+          token: ${{ secrets.SYNC_TOKEN || secrets.GH_PAT }}
           commit-message: 'Auto Urls: ${{ matrix.task }}'
           branch: 'auto-urls-${{ matrix.task }}'
           delete-branch: true
@@ -154,6 +155,7 @@ jobs:
       - name: Create Aggregate PR
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
+          token: ${{ secrets.SYNC_TOKEN || secrets.GH_PAT }}
           commit-message: 'chore: update permissions and types'
           branch: 'auto-urls-aggregate'
           delete-branch: true
