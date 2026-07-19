@@ -78,13 +78,13 @@ module.exports = {
     match: ['*://*.vidlox.me/*'],
   },
   kwik: {
-    match: ['*://*.kwik.cx/*', '*://*.kwik.si/*'],
+    match: ['*://*.kwik.cx/*', '*://*.kwik.si/*', '*://*.mewcdn.online/*'],
   },
   mega: {
     match: ['*://*.mega.nz/*'],
   },
   animeflv: {
-    match: ['*://*.animeflv.net/*', '*://*.jwplayerhls.com/*'],
+    match: ['*://*.animeflv.net/*', '*://*.jwplayerhls.com/*', '*://playnixes.com/*'],
   },
   netu: {
     match: ['*://*.hqq.tv/*', '*://waaw.tv/*'],
@@ -192,9 +192,9 @@ module.exports = {
   streamium: {
     match: ['*://*.streamium.xyz/*'],
   },
-  // AnimeGO
+  // AnimeGO AnimeLib
   kodik: {
-    match: ['*://kodik.info/*'],
+    match: ['*://kodik.info/*', '*://kodikplayer.com/*'],
   },
   // AnimeGO
   aniboom: {
@@ -259,6 +259,8 @@ module.exports = {
       '*://*.m1xdrop.net/e/*',
       '*://*.m1xdrop.com/e/*',
       '*://*.m1xdrop.bz/e/*',
+      '*://*.miixdrop.net/e/*',
+      '*://*.miiiixdrop.net/e/*',
       // auto-mixdrop-replace-dont-remove
     ],
   },
@@ -555,6 +557,29 @@ module.exports = {
       '*://myvidplay.com/e/*',
       '*://lauradaydo.com/e/*',
       '*://lancewhosedifficult.com/e/*',
+      '*://dianaavoidthey.com/e/*',
+      '*://jefferycontrolmodel.com/e/*',
+      '*://jessicaclearout.com/e/*',
+      '*://marissasharecareer.com/e/*',
+      '*://charlestoughrace.com/e/*',
+      '*://timmaybealready.com/e/*',
+      '*://richardquestionbuilding.com/e/*',
+      '*://charlessheimprove.com/e/*',
+      '*://maryspecialwatch.com/e/*',
+      '*://benjaminreducecommunity.com/e/*',
+      '*://nicholasbreakplan.com/e/*',
+      '*://rebeccasciencestreet.com/e/*',
+      '*://ericeastweight.com/e/*',
+      '*://kathyinformationwhether.com/e/*',
+      '*://bryantenunder.com/e/*',
+      '*://vickisaveworker.com/e/*',
+      '*://rebeccacostthousand.com/e/*',
+      '*://jessicayeahcatch.com/e/*',
+      '*://jeanprofessorcentral.com/e/*',
+      '*://juliewomanwish.com/e/*',
+      '*://garylargeavailable.com/e/*',
+      '*://jennifereconomicgive.com/e/*',
+      '*://pamelachangemission.com/e/*',
       // auto-voe-replace-dont-remove
     ],
   },
@@ -826,16 +851,6 @@ module.exports = {
   bun: {
     match: ['*://*.bunniescdn.online/*'],
   },
-  // animekai
-  megaup: {
-    match: [
-      '*://megaup.cc/e/*',
-      '*://megaup.site/e/*',
-      '*://megaup.live/e/*',
-      '*://4spromax.site/e/*',
-      '*://megaup22.online/e/*',
-    ],
-  },
   // hikari
   boosterx: {
     match: ['*://boosterx.stream/*'],
@@ -843,10 +858,6 @@ module.exports = {
   // animeav1
   animeav1: {
     match: ['*://player.zilla-networks.com/*'],
-  },
-  // miruro
-  megaplay: {
-    match: ['*://megaplay.buzz/*'],
   },
   // Anizm
   anizmplayer: {

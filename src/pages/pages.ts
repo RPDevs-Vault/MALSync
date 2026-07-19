@@ -19,7 +19,6 @@ import { JapScan } from './JapScan/main';
 import { Hulu } from './Hulu/main';
 import { Hidive } from './Hidive/main';
 import { MangaKatana } from './MangaKatana/main';
-import { manga4life } from './manga4life/main';
 import { AnimeXin } from './AnimeXin/main';
 import { MonosChinos } from './MonosChinos/main';
 import { Anime365 } from './Anime365/main';
@@ -36,16 +35,13 @@ import { MangaHere } from './MangaHere/main';
 import { MangaFox } from './MangaFox/main';
 import { DesuOnline } from './DesuOnline/main';
 import { WuxiaWorld } from './WuxiaWorld/main';
-import { ReaperScans } from './ReaperScans/main';
 import { LynxScans } from './LynxScans/main';
 import { DeathTollScans } from './DeathTollScans/main';
 import { ManhuaPlus } from './ManhuaPlus/main';
 import { Readm } from './Readm/main';
 import { tioanime } from './tioanime/main';
-import { MangaSee } from './MangaSee/main';
 import { Okanime } from './Okanime/main';
 import { BSTO } from './BSTO/main';
-import { Jellyfin } from './Jellyfin/main';
 import { An1me } from './An1me/main';
 import { MangaJar } from './MangaJar/main';
 import { Otakustv } from './Otakustv/main';
@@ -58,7 +54,6 @@ import { MangaHub } from './MangaHub/main';
 import { Bentomanga } from './Bentomanga/main';
 import { ReadManhua } from './ReadManhua/main';
 import { ImmortalUpdates } from './ImmortalUpdates/main';
-import { Zoro } from './Zoro/main';
 import { LHTranslation } from './LHTranslation/main';
 import { MangasOrigines } from './MangasOrigines/main';
 import { BlueSolo } from './BlueSolo/main';
@@ -75,14 +70,12 @@ import { ToonAnime } from './ToonAnime/main';
 import { ADKami } from './ADKami/main';
 import { Kaguya } from './Kaguya/main';
 import { Hdrezka } from './Hdrezka/main';
-import { SovetRomantica } from './SovetRomantica/main';
 import { ADN } from './ADN/main';
 import { Aniyan } from './Aniyan/main';
 import { Docchi } from './Docchi/main';
 import { FMTeam } from './FMTeam/main';
 import { Animelon } from './Animelon/main';
 import { AnimeSama } from './AnimeSama/main';
-import { MangaFire } from './MangaFire/main';
 import { projectsuki } from './projectsuki/main';
 import { AnimeBuff } from './AnimeBuff/main';
 import { AnimeOnegai } from './AnimeOnegai/main';
@@ -100,7 +93,6 @@ import { Taiyo } from './Taiyo/main';
 import { AnimesOnline } from './AnimesOnline/main';
 import { Latanime } from './Latanime/main';
 import { MangaRead } from './MangaRead/main';
-import { TempleScan } from './TempleScan/main';
 import { Kavita } from './Kavita/main';
 import { Aninexus } from './Aninexus/main';
 import { AniDream } from './AniDream/main';
@@ -127,7 +119,6 @@ export const pages = {
   Hulu,
   Hidive,
   MangaKatana,
-  manga4life,
   AnimeXin,
   MonosChinos,
   Anime365,
@@ -144,16 +135,13 @@ export const pages = {
   MangaFox,
   DesuOnline,
   WuxiaWorld,
-  ReaperScans,
   LynxScans,
   DeathTollScans,
   ManhuaPlus,
   Readm,
   tioanime,
-  MangaSee,
   Okanime,
   BSTO,
-  Jellyfin,
   An1me,
   MangaJar,
   Otakustv,
@@ -166,7 +154,6 @@ export const pages = {
   Bentomanga,
   ReadManhua,
   ImmortalUpdates,
-  Zoro,
   LHTranslation,
   MangasOrigines,
   BlueSolo,
@@ -183,14 +170,12 @@ export const pages = {
   ADKami,
   Kaguya,
   Hdrezka,
-  SovetRomantica,
   ADN,
   Aniyan,
   Docchi,
   FMTeam,
   Animelon,
   AnimeSama,
-  MangaFire,
   projectsuki,
   AnimeBuff,
   AnimeOnegai,
@@ -208,7 +193,6 @@ export const pages = {
   AnimesOnline,
   Latanime,
   MangaRead,
-  TempleScan,
   Kavita,
   Aninexus,
   AniDream,

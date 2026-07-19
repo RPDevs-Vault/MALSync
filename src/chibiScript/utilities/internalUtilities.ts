@@ -2,18 +2,41 @@ import type { ChibiGenerator, ChibiJson } from '../ChibiGenerator';
 
 export default {
   /**
+   * Executes a function with the current generator context
+   * @input any - Current context
+   * @param fn - Function to execute that takes the generator and returns a new generator
+   * @returns Result of the function execution
+   * @example
+   * function meta($c: ChibiGenerator<unknown>) {
+   *    return $c.getGlobalVariable('metadataGlobal');
+   * }
+   *
+   * $c.exec(meta).get('Type').run()
+   */
+  exec: <Input, Output>(
+    $c: ChibiGenerator<Input>,
+    fn: (c: ChibiGenerator<Input>) => ChibiGenerator<Output>,
+  ): ChibiGenerator<Output> => {
+    return fn($c);
+  },
+
+  /**
    * Utility to generate provider URLs based on provided IDs or URLs
    */
   providerUrlUtility: (
     $c: ChibiGenerator<void>,
     provider: {
-      [K in
-        | 'anilistId'
-        | 'anilistUrl'
-        | 'kitsuId'
-        | 'kitsuUrl'
-        | 'malId'
-        | 'malUrl']?: ChibiJson<any>;
+      [
+        K in
+          | 'anilistId'
+          | 'anilistUrl'
+          | 'kitsuId'
+          | 'kitsuUrl'
+          | 'mangabakaId'
+          | 'mangabakaUrl'
+          | 'malId'
+          | 'malUrl'
+      ]?: ChibiJson<any>;
     },
   ) => {
     const providerConfig = [
@@ -21,19 +44,25 @@ export default {
         provider: 'ANILIST',
         urlKey: 'anilistUrl',
         idKey: 'anilistId',
-        urlTemplate: 'https://anilist.co/manga/<identifier>',
+        urlTemplate: 'https://anilist.co/<type>/<identifier>',
       },
       {
         provider: 'KITSU',
         urlKey: 'kitsuUrl',
         idKey: 'kitsuId',
-        urlTemplate: 'https://kitsu.app/manga/<identifier>',
+        urlTemplate: 'https://kitsu.app/<type>/<identifier>',
+      },
+      {
+        provider: 'MANGABAKA',
+        urlKey: 'mangabakaUrl',
+        idKey: 'mangabakaId',
+        urlTemplate: 'https://mangabaka.org/<identifier>',
       },
       {
         provider: 'MAL',
         urlKey: 'malUrl',
         idKey: 'malId',
-        urlTemplate: 'https://myanimelist.net/manga/<identifier>',
+        urlTemplate: 'https://myanimelist.net/<type>/<identifier>',
       },
     ];
 
@@ -57,6 +86,7 @@ export default {
               $c
                 .string(config.urlTemplate)
                 .replace('<identifier>', $c.getVariable(config.idKey).run())
+                .replace('<type>', $c.getVariable<{ type: string }>('pageObject').get('type').run())
                 .return()
                 .run(),
             );
